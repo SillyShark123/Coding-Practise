@@ -42,7 +42,8 @@ print("Group: "+"(" + GroupName+")"+" Number In Group: " + "("+str(NoOfPupils)+"
 
 #fixed loop which prints all arrays
 for counter in range(len(NamesInGroup)):
-  print("Pupil:"+NamesInGroup[counter]+" Due:" + str(PupilPrice[counter]))
+  print("Person "+str(counter)+":"'{:10} {:10}'.format(NamesInGroup[counter],str(PupilPrice[counter])))
+  #print("Pupil:"+NamesInGroup[counter]+" Due:" + str(PupilPrice[counter]))
 
 #Print statement which shows the total price of everything
 print("total due is: "+ str(totalPrice))
