@@ -12,11 +12,12 @@ totalPrice = 0
 
 #Asking for first inputs
 GroupName = input("What is the name of the group?: ")
-NoOfPupils = int(input("How many people are in " + GroupName + "?: "))
+NoOfPupils = float(input("How many people are in " + GroupName + "?: "))
 #Input validation
-while NoOfPupils < 4 and NoOfPupils > 10:
+while NoOfPupils < 4 and NoOfPupils > 10 or not NoOfPupils.is_integer():
   print("Sorry enter a group number between 4 and 10")
-  NoOfPupils = int(input("How many people are in " + GroupName + "?: "))
+  NoOfPupils = float(input("How many people are in " + GroupName + "?: "))
+NoOfPupils = int(NoOfPupils)
 
 #Fixed loop which is linked to input of NoOfPupils (First Input)
 for counter in range(NoOfPupils):
